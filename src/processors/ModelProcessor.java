@@ -34,7 +34,7 @@ public class ModelProcessor extends AbstractProcessor{
 						ColumnName anno = innerElement.getAnnotation(ColumnName.class);
 						
 						if (anno != null) {
-							System.out.println("Successfully found one in the thing");
+							System.out.println("Successfully found one in the thing" + innerElement.getSimpleName());
 						} else {
 							System.out.println("Successfully found one not in the thing");
 						}
