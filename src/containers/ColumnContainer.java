@@ -5,11 +5,12 @@ import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Name;
 import javax.lang.model.type.TypeMirror;
 
-public class ColumnNameContainer {
+public class ColumnContainer {
 	private Element mInnerElement;
 	private Name mElementName;
 	private TypeMirror mElementType;
-	public ColumnNameContainer(Element innerElement) {
+	
+	public ColumnContainer(Element innerElement) {
 		assert innerElement.getKind() == ElementKind.FIELD;
 		
 		mInnerElement = innerElement;
